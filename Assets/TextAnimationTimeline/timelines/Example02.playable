@@ -78,7 +78,7 @@ MonoBehaviour:
     animationType: 3
     textSegmentationOptions: 1
     fontSize: 2600
-    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    overrideFont: {fileID: 11400000, guid: aadefc6bf773c83419dd1b927e986ef4, type: 2}
     offsetLocalPosition: {x: 500, y: -200, z: 0}
     offsetEulerAngles: {x: 0, y: 0, z: 0}
     offsetLocalScale: {x: 0, y: 0, z: 0}
@@ -247,7 +247,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: "\u6D6E\u304B\u3073\u4E0A\u304C\u308B\u3088"
+    m_DisplayName: Line
   - m_Version: 1
     m_Start: 2.316666666666667
     m_ClipIn: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
     animationType: 4
     textSegmentationOptions: 1
     fontSize: -1
-    overrideFont: {fileID: 0}
+    overrideFont: {fileID: 11400000, guid: aadefc6bf773c83419dd1b927e986ef4, type: 2}
     offsetLocalPosition: {x: 0, y: 0, z: 0}
     offsetEulerAngles: {x: 0, y: 0, z: 0}
     offsetLocalScale: {x: 0, y: 0, z: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
     animationType: 17
     textSegmentationOptions: 1
     fontSize: 1600
-    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    overrideFont: {fileID: 0}
     offsetLocalPosition: {x: 100, y: 100, z: -200}
     offsetEulerAngles: {x: 0, y: -30, z: 0}
     offsetLocalScale: {x: 0, y: 0, z: 0}
@@ -698,7 +698,7 @@ MonoBehaviour:
     animationType: 14
     textSegmentationOptions: 1
     fontSize: 2400
-    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    overrideFont: {fileID: 0}
     offsetLocalPosition: {x: 0, y: 0, z: 0}
     offsetEulerAngles: {x: 0, y: 0, z: 0}
     offsetLocalScale: {x: 0, y: 0, z: 0}
@@ -831,7 +831,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Lines
+    m_DisplayName: "\u6D6E\u304B\u3073\u4E0A\u304C\u308B\u3088"
   - m_Version: 1
     m_Start: 5.433333333333334
     m_ClipIn: 0
