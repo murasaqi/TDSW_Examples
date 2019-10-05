@@ -1,3 +1,6 @@
 Assets/TextAnimationTimeline/sdf/RoGSanSrfStd-BdSDF.asset filter=lfs diff=lfs merge=lfs -text
 Assets/TextAnimationTimeline/sdf/TestSDF.asset filter=lfs diff=lfs merge=lfs -text
 Assets/TextAnimationTimeline/sdf/G-OTF-GKyokaICAPro-Regular[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextAnimationTimeline/sdf/ShipporiMincho-TTF-Regular[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextAnimationTimeline/sdf/NotoSansCJKjp-Medium[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextAnimationTimeline/sdf/ShipporiMincho-TTF-Regular.ttf filter=lfs diff=lfs merge=lfs -text
