@@ -1,0 +1,1112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8990304057632404252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 0
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 7
+    textSegmentationOptions: 1
+    fontSize: 1500
+    overrideFont: {fileID: 11400000, guid: 61410e39de5b4e04692d9380305f9a90, type: 2}
+    offsetLocalPosition: {x: -500, y: 100, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: d8260c27b74ef7043a3709dfc54a9f4b
+    defaultValue: {fileID: 0}
+--- !u!114 &-6284951560841169260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+  m_Name: Markers
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+--- !u!114 &-5218106437622255534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 0
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 3
+    textSegmentationOptions: 1
+    fontSize: 2600
+    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    offsetLocalPosition: {x: 500, y: -200, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 6c174e3e909d0c145ab786d8c721957b
+    defaultValue: {fileID: 0}
+--- !u!114 &-4310951020131177815
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e800801759a08554ea43573224e090cd, type: 3}
+  m_Name: Text Animation Control Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 4.933333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: -8990304057632404252}
+    m_Duration: 2.033333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4310951020131177815}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u7E26\u66F8\u304D\u3082"
+  - m_Version: 1
+    m_Start: 0.35
+    m_ClipIn: 0
+    m_Asset: {fileID: 79521002546569363}
+    m_Duration: 1.6666666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4310951020131177815}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u6D6E\u304B\u3073\u4E0A\u304C\u308B\u3088"
+  - m_Version: 1
+    m_Start: 2.316666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: -1277019444942903987}
+    m_Duration: 1.7999999999999994
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4310951020131177815}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u6A2A\u304B\u3089\u98DB\u3073\u3067\u308B"
+  - m_Version: 1
+    m_Start: 8.2
+    m_ClipIn: 0
+    m_Asset: {fileID: -2606407018966720982}
+    m_Duration: 3.5500000000000007
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4310951020131177815}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Line
+  - m_Version: 1
+    m_Start: 16.75
+    m_ClipIn: 0
+    m_Asset: {fileID: 1321687666038414068}
+    m_Duration: 3.549999999999999
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4310951020131177815}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u5DE6\u304B\u3089/\u6587\u5B57\u3092/\u6577\u304D\u8A70\u3081\u308B\u3088"
+  m_Markers:
+    m_Objects: []
+--- !u!114 &-2658128026689826079
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: -1
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 16
+    textSegmentationOptions: 1
+    fontSize: 1800
+    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    offsetLocalPosition: {x: -150, y: -150, z: -100}
+    offsetEulerAngles: {x: 0, y: 50, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: a799525fa42daef4a8e066b98d12c226
+    defaultValue: {fileID: 0}
+--- !u!114 &-2606407018966720982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 0
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 2
+    textSegmentationOptions: 1
+    fontSize: 2600
+    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    offsetLocalPosition: {x: -150, y: 200, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 258ed0b3b75dcfa4b81fd646938de14c
+    defaultValue: {fileID: 0}
+--- !u!114 &-2486156579780428539
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 0
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 7
+    textSegmentationOptions: 1
+    fontSize: 1000
+    overrideFont: {fileID: 11400000, guid: 61410e39de5b4e04692d9380305f9a90, type: 2}
+    offsetLocalPosition: {x: 300, y: -100, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 5304f76b8fab18549b83b049099e517d
+    defaultValue: {fileID: 0}
+--- !u!114 &-2016249259618580145
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: -1
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 4
+    textSegmentationOptions: 1
+    fontSize: -1
+    overrideFont: {fileID: 0}
+    offsetLocalPosition: {x: 0, y: 0, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 21497dc29181662488bd996492723199
+    defaultValue: {fileID: 0}
+--- !u!114 &-1277019444942903987
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: -1
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 17
+    textSegmentationOptions: 1
+    fontSize: 1600
+    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    offsetLocalPosition: {x: 100, y: 100, z: -200}
+    offsetEulerAngles: {x: 0, y: -30, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: f74dd24ce4a614440ad56fb1a1fb1bd6
+    defaultValue: {fileID: 0}
+--- !u!114 &-823218041763255561
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 1
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 13
+    textSegmentationOptions: 1
+    fontSize: -1
+    overrideFont: {fileID: 0}
+    offsetLocalPosition: {x: 0, y: 0, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 0fdfa0db76db7b742869c1ed6d11d2e8
+    defaultValue: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: Example02
+  m_EditorClassIdentifier: 
+  m_Version: 0
+  m_Tracks:
+  - {fileID: -4310951020131177815}
+  - {fileID: 4954540812014346035}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+  m_DurationMode: 0
+  m_MarkerTrack: {fileID: -6284951560841169260}
+--- !u!114 &79521002546569363
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: 0
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 14
+    textSegmentationOptions: 1
+    fontSize: 2400
+    overrideFont: {fileID: 11400000, guid: 853fbc2dd062b904585d41b7d247c0ff, type: 2}
+    offsetLocalPosition: {x: 0, y: 0, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: d2e8c457ca4dd7f45b97c3309cc75330
+    defaultValue: {fileID: 0}
+--- !u!114 &1321687666038414068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aff68f440e59a34e99b8a01b47f563a, type: 3}
+  m_Name: TextAnimationControlClip
+  m_EditorClassIdentifier: 
+  template:
+    id: 0
+    layer: -1
+    isCreate: 0
+    motionTextElement: {fileID: 0}
+    overrideParent: {fileID: 0}
+    DestroyTextOnEnd: 1
+    animationType: 5
+    textSegmentationOptions: 1
+    fontSize: -1
+    overrideFont: {fileID: 0}
+    offsetLocalPosition: {x: 0, y: 0, z: 0}
+    offsetEulerAngles: {x: 0, y: 0, z: 0}
+    offsetLocalScale: {x: 0, y: 0, z: 0}
+    referenceTransform: {fileID: 0}
+  overrideParent:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  referenceTransform:
+    exposedName: 99a81bde0e6ceef4fb614dec879a7fff
+    defaultValue: {fileID: 0}
+--- !u!114 &4954540812014346035
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e800801759a08554ea43573224e090cd, type: 3}
+  m_Name: Text Animation Control Track (1)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0.35
+    m_ClipIn: 0
+    m_Asset: {fileID: -823218041763255561}
+    m_Duration: 1.6666666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 4954540812014346035}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Lines
+  - m_Version: 1
+    m_Start: 5.433333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: -2486156579780428539}
+    m_Duration: 2.1000000000000005
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 4954540812014346035}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u3067\u304D\u308B\u3088"
+  - m_Version: 1
+    m_Start: 3.0833333333333335
+    m_ClipIn: 0
+    m_Asset: {fileID: -2658128026689826079}
+    m_Duration: 1.4666666666666663
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 4954540812014346035}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u6587\u5B57\u305F\u3061\u3088"
+  - m_Version: 1
+    m_Start: 9.183333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: -5218106437622255534}
+    m_Duration: 3.1999999999999993
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 4954540812014346035}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u5207\u3089\u308C\u3066\u98DB\u3093\u3067"
+  - m_Version: 1
+    m_Start: 13.200000000000001
+    m_ClipIn: 0
+    m_Asset: {fileID: -2016249259618580145}
+    m_Duration: 3.549999999999999
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 4954540812014346035}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u305F\u304F\u3055\u3093/\u6587\u5B57\u3092/\u6577\u304D\u8A70\u3081\u308B\u3088"
+  m_Markers:
+    m_Objects: []
