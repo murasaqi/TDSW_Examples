@@ -76,7 +76,7 @@ namespace TextAnimationTimeline.Motions
            
             
             
-            var count = 0;
+            // var count = 0;
             for (int i = 0; i < TextMeshElement.Children.Count; i++)
             {
                 moves[i].OnProcess((float)normalizedTime);
@@ -156,7 +156,7 @@ namespace TextAnimationTimeline.Motions
            
             
             
-            var count = 0;
+            // var count = 0;
             for (int i = 0; i < TextMeshElement.Children.Count; i++)
             {
                 moves[i].OnProcess((float)normalizedTime);

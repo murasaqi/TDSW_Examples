@@ -19,7 +19,16 @@ namespace TextAnimationTimeline
 			var mixer = ScriptPlayable<TextAnimationControlMixerBehaviour>.Create(graph, inputCount);
 //				Debug.Log(GetClips().ToList());
 			mixer.GetBehaviour().clips = GetClips().ToList();
+			
 			mixer.GetBehaviour().m_PlayableDirector = go.GetComponent<PlayableDirector>();
+			var binding = mixer.GetBehaviour().m_PlayableDirector.GetGenericBinding(this) as TextAnimationManager;
+			foreach (var clip in mixer.GetBehaviour().clips)
+			{
+				var playableAsset = clip.asset as TextAnimationControlClip;
+				if (playableAsset != null && playableAsset.overrideParent.defaultValue == null)
+					playableAsset.overrideParent.defaultValue = binding;
+			}    
+			
 			return mixer;
 		}
 	}

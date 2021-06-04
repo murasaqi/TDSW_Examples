@@ -5,7 +5,7 @@ namespace TextAnimationTimeline.Motions
     public class SineWave : MotionTextElement
     {
         private Material material;
-        private float time = 0f;
+        // private float time = 0f;
         public override void Init(string word, double duration)
         {
             name = "sinWave";

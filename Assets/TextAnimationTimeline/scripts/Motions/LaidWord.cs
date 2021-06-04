@@ -22,7 +22,7 @@ namespace TextAnimationTimeline.Motions
         private AnimationCurve curveIn;
         private AnimationCurve curveOut;
         private Material material;
-        private float alpha = 0f;
+        // private float alpha = 0f;
         public void Init(AnimationCurve curveIn, AnimationCurve curveOut)
         {
             this.curveIn = curveIn;
@@ -45,7 +45,7 @@ namespace TextAnimationTimeline.Motions
                     material.SetFloat("_Alpha",Mathf.Lerp(0f, 1f, curveIn.Evaluate(t / fadeInOutDuration)));
                 }
                
-                if (t >= fadeInOutDuration + stayDuration) ;
+                if (t >= fadeInOutDuration + stayDuration) 
                 {
                     var fadeOutTimeline = Mathf.Clamp(t - (fadeInOutDuration + stayDuration), 0f, fadeInOutDuration) /
                                           fadeInOutDuration;
@@ -143,7 +143,7 @@ namespace TextAnimationTimeline.Motions
             }
             else
             {
-                if (t >= fadeInOutDuration + stayDuration) ;
+                if (t >= fadeInOutDuration + stayDuration) 
                 {
                     var fadeOutTimeline = Mathf.Clamp(t - (fadeInOutDuration + stayDuration), 0f, fadeInOutDuration) /
                                           fadeInOutDuration;

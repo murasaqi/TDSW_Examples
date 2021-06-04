@@ -78,7 +78,7 @@ namespace TextAnimationTimeline.Motions
             TextMeshElement.alpha = 0f;
             
 
-            var delay = 0f;
+            // var delay = 0f;
             var delayStep = 0.3f / (TextMeshElement.Children.Count - 1);
             
             foreach (var character in TextMeshElement.Children)

@@ -74,12 +74,12 @@ namespace TextAnimationTimeline.Motions
 
             var delay = 0f;
             var delayStep = (0.5f / (TextMeshElement.Children.Count - 1));
-            var fadeinDuration = (0.5f / (TextMeshElement.Children.Count - 1));
-            var fadeoutDuration = 0.1f;
+            // var fadeinDuration = (0.5f / (TextMeshElement.Children.Count - 1));
+            // var fadeoutDuration = 0.1f;
             foreach (var t in TextMeshElement.Children)
             {
                 t.transform.localScale = Vector3.zero;
-                Debug.Log(t.transform.localPosition);
+                // Debug.Log(t.transform.localPosition);
                 t.transform.SetParent(transform,false);
                 var m = t.gameObject.AddComponent<BasicPopup>();
                 m.Init(AnimationCurveAsset.SteepInOut,delay);
@@ -104,7 +104,7 @@ namespace TextAnimationTimeline.Motions
            
             
             
-            var count = 0;
+            // var count = 0;
             for (int i = 0; i < TextMeshElement.Children.Count; i++)
             {
                 _basicPopups[i].OnProcess((float)normalizedTime);

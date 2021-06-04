@@ -88,6 +88,12 @@ namespace TextAnimationTimeline
 				}
 
 
+
+				if (input.motionTextElement && time < clip.start)
+				{
+					input.motionTextElement.Remove();
+					input.motionTextElement = null;
+				}
 			}
 		}
 	}
