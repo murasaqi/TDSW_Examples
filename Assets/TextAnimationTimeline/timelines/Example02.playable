@@ -429,7 +429,7 @@ MonoBehaviour:
     overrideParent: {fileID: 0}
     animationType: 1
     textSegmentationOptions: 1
-    fontSize: 300
+    fontSize: 500
     overrideFont: {fileID: 0}
     offsetLocalPosition: {x: 0, y: 0, z: 0}
     offsetEulerAngles: {x: 0, y: 0, z: 0}
@@ -456,8 +456,8 @@ MonoBehaviour:
     isCreate: 0
     motionTextElement: {fileID: 0}
     overrideParent: {fileID: 0}
-    animationType: 0
-    textSegmentationOptions: 0
+    animationType: 8
+    textSegmentationOptions: 1
     fontSize: -1
     overrideFont: {fileID: 0}
     offsetLocalPosition: {x: 0, y: 0, z: 0}
