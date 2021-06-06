@@ -24,7 +24,7 @@ namespace TextAnimationTimeline.Motions
 
             foreach (var c in TextMeshElement.Children)
             {
-                var t = Graphics.WordToTextureGameObject(c,1600,TextAnimationManager.CaptureCamera);
+                var t = Graphics.WordToTextureGameObject(c,1600,textAnimationManager.CaptureCamera);
                 t.transform.SetParent(transform);
                 t.layer = 2;
                 textureObjs.Add(t);
@@ -51,7 +51,7 @@ namespace TextAnimationTimeline.Motions
         public void Init()
         {
             
-            var resolution = TextAnimationManager.Resolution;
+            var resolution = textAnimationManager.Resolution;
             var textLineDirection = new Vector3(resolution.x / 2, -resolution.y / 2,0f);
             textLineDirection = Vector3.Normalize(textLineDirection);
 
@@ -101,7 +101,7 @@ namespace TextAnimationTimeline.Motions
                 motions.Add(mo);
 
                 var a = character.gameObject.AddComponent<CharacterAlphaInOut>();
-                a.Init(character,AnimationCurveAsset.Kaf_CharacterPoursAlphaInOut,delay);
+                a.Init(character,animationCurveAsset.Kaf_CharacterPoursAlphaInOut,delay);
                 alphaInOuts.Add(a);
                 
                 delay += delayStep;
@@ -114,7 +114,7 @@ namespace TextAnimationTimeline.Motions
 
             var cutDelay = 0.2f;
 //            var t = Mathf.Clamp((float)normalizedTime, 0f, 1f-cutDuration) /(1f-cutDuration);
-            var t = AnimationCurveAsset.Kaf_CharacterPours.Evaluate((float)normalizedTime);
+            var t = animationCurveAsset.Kaf_CharacterPours.Evaluate((float)normalizedTime);
             foreach (var mo in motions)
             {
                 mo.OnProcess(t);
@@ -159,8 +159,8 @@ namespace TextAnimationTimeline.Motions
                 var start =lineStart;
                 var end = lineEnd;
                 var pieces = meshCutter.CutLine(
-                    Vector3.Lerp(start, end, AnimationCurveAsset.CutSlashOut.Evaluate(d)) + transform.localPosition, 
-                    Vector3.Lerp(start, end, AnimationCurveAsset.CutSlashIn.Evaluate(d)) + transform.localPosition );
+                    Vector3.Lerp(start, end, animationCurveAsset.CutSlashOut.Evaluate(d)) + transform.localPosition, 
+                    Vector3.Lerp(start, end, animationCurveAsset.CutSlashIn.Evaluate(d)) + transform.localPosition );
                 meshCutter.enabled = false;
                 //
 //                

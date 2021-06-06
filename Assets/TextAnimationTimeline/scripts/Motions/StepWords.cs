@@ -85,7 +85,7 @@ namespace TextAnimationTimeline.Motions
             {
                 character.color = Color.white;
                 character.alpha = 1f;
-                var t = Graphics.WordToTextureGameObject(character,100, TextAnimationManager.CaptureCamera);
+                var t = Graphics.WordToTextureGameObject(character,100, textAnimationManager.CaptureCamera);
                 words.Add(t);
             }
             

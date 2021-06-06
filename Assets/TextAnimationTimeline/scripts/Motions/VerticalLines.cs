@@ -31,8 +31,8 @@ namespace TextAnimationTimeline.Motions
                 l.start = new Vector3(x, y, 0) + transform.position;
                 l.end = new Vector3(x, endy, 0) + transform.position;
                 
-                l.curveIn = AnimationCurveAsset.SteepIn;
-                l.curveOut = AnimationCurveAsset.HorizontalLineOut;
+                l.curveIn = animationCurveAsset.SteepIn;
+                l.curveOut = animationCurveAsset.HorizontalLineOut;
 //                l.gameObject.layer = 15;
                 lines.Add(l);
                 l.Init();

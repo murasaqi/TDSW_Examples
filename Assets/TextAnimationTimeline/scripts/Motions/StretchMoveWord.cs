@@ -25,7 +25,7 @@ namespace TextAnimationTimeline.Motions
 
             foreach (var t in textMeshElements)
             {
-                var texture =Graphics.WordToTextureGameObject(t.Children[0], (int)Random.Range(500,1000),TextAnimationManager.CaptureCamera);
+                var texture =Graphics.WordToTextureGameObject(t.Children[0], (int)Random.Range(500,1000),textAnimationManager.CaptureCamera);
                 texture.transform.SetParent(transform);
                 wordQuads.Add(texture);
             }
@@ -40,7 +40,7 @@ namespace TextAnimationTimeline.Motions
 
         private void PackingWords()
         {
-            var resolution = TextAnimationManager.Resolution;
+            var resolution = textAnimationManager.Resolution;
             var startPos = new Vector3(
                     -resolution.x/2f*Random.Range(0.8f,0.9f),
                     resolution.y/2f,

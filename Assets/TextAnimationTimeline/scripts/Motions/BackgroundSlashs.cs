@@ -58,7 +58,7 @@ namespace TextAnimationTimeline.Motions
         public List <Slash> slashs = new List<Slash>();
         public override void Init(string word, double duration)
         {
-            var resolution = TextAnimationManager.Resolution;
+            var resolution = textAnimationManager.Resolution;
             
             for (int i = 0; i < size; i++)
             {
@@ -76,7 +76,7 @@ namespace TextAnimationTimeline.Motions
                 go.transform.localPosition = Vector3.zero;
                 var l = go.AddComponent<Slash>();
                 l.delay = Random.Range(0.5f, 0f);
-                l.Init(start, end,AnimationCurveAsset.BasicIn,AnimationCurveAsset.Kaf_SlashOut);
+                l.Init(start, end,animationCurveAsset.BasicIn,animationCurveAsset.Kaf_SlashOut);
                 
                 slashs.Add(l);     
             }

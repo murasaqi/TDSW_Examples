@@ -82,9 +82,9 @@ namespace TextAnimationTimeline.Motions
                 // Debug.Log(t.transform.localPosition);
                 t.transform.SetParent(transform,false);
                 var m = t.gameObject.AddComponent<BasicPopup>();
-                m.Init(AnimationCurveAsset.SteepInOut,delay);
+                m.Init(animationCurveAsset.SteepInOut,delay);
                 var b = t.gameObject.AddComponent<BasicBounceUpMove>();
-                b.Init(AnimationCurveAsset.SteepIn,delay);
+                b.Init(animationCurveAsset.SteepIn,delay);
                 
                 b.start = t.transform.localPosition + new Vector3(0,-150f, 0);
                 b.end =t.transform.localPosition ;

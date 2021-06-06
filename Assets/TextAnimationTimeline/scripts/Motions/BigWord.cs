@@ -81,9 +81,9 @@ namespace TextAnimationTimeline.Motions
                 mo.startAngle = Vector3.zero;
                 mo.endAngle = new Vector3(Random.Range(-30,30),Random.Range(-60,60),Random.Range(-60,60));
 
-                mo.curve_move = AnimationCurveAsset.BigWordMove;
-                mo.curve_alpha = AnimationCurveAsset.BigWordInOut;
-                mo.curve_scale = AnimationCurveAsset.SteepIn;
+                mo.curve_move = animationCurveAsset.BigWordMove;
+                mo.curve_alpha = animationCurveAsset.BigWordInOut;
+                mo.curve_scale = animationCurveAsset.SteepIn;
                 motions.Add(mo);
                 
 

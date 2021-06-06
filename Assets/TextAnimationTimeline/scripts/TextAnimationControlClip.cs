@@ -12,7 +12,7 @@ namespace TextAnimationTimeline
 		public TextAnimationControlBehaviour template = new TextAnimationControlBehaviour();
 		
 		public ExposedReference<GameObject> overrideParent;
-		public ExposedReference<GameObject> referenceTransform;
+		// public ExposedReference<GameObject> referenceTransform;
 //		public ExposedReference<List<GameObject>> referenceGameObjects;
 		public ClipCaps clipCaps
 		{
@@ -23,7 +23,7 @@ namespace TextAnimationTimeline
 			var playable = ScriptPlayable<TextAnimationControlBehaviour>.Create(graph, template);
 			var clone = playable.GetBehaviour();
 			clone.overrideParent = overrideParent.Resolve(graph.GetResolver());
-			clone.referenceTransform = referenceTransform.Resolve(graph.GetResolver());
+			// clone.referenceTransform = referenceTransform.Resolve(graph.GetResolver());
 			return playable;
 		}
 		

@@ -18,14 +18,14 @@ namespace TextAnimationTimeline
 		public MotionTextElement motionTextElement;
 		[HideInInspector]
 		public GameObject overrideParent = null;
-		public bool DestroyTextOnEnd = false;
+		// public bool DestroyTextOnEnd = false;
 		public AnimationType animationType;
 		public TextSegmentationOptions textSegmentationOptions;
 		public float fontSize = -1;
 		public TMP_FontAsset overrideFont;
 		public Vector3 offsetLocalPosition;
 		public Vector3 offsetEulerAngles;
-		public Vector3 offsetLocalScale;
+		public Vector3 offsetLocalScale = Vector3.one;
 		[HideInInspector]
 		public GameObject referenceTransform;
 //		public Vector3 StartPosition;

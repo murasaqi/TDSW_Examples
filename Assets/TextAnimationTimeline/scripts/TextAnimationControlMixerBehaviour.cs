@@ -21,16 +21,33 @@ namespace TextAnimationTimeline
 		public List<TimelineClip> clips;
 		internal PlayableDirector m_PlayableDirector;
 		private List<PlayableBehaviour> inputs = new List<PlayableBehaviour>();
-
+		private List<MotionTextElement> motionTextElements = new List<MotionTextElement>();
 		public override void ProcessFrame(Playable playable, FrameData info, object playerData)
 		{
 			TextAnimationManager trackBinding = playerData as TextAnimationManager;
-
+	
 			if (!trackBinding)
 				return;
 
 			double time = m_PlayableDirector.time;
 			var counter = 0;
+
+			
+			for (int i = motionTextElements.Count - 1; i >= 0; i--) {
+				var motion = motionTextElements[i];
+				if (motion != null)
+				{
+					// Debug.Log(motion.name);
+					if (time < motion.clip.start || motion.clip.end < time)
+					{
+						motionTextElements.RemoveAt(i);
+						motion.textAnimationControlBehaviour.motionTextElement = null;
+						motion.Remove();
+					}
+
+				}
+
+			}
 			foreach (var clip in clips)
 			{
 				counter++;
@@ -44,7 +61,7 @@ namespace TextAnimationTimeline
 //						Debug.Log(clip.displayName+":" + 1);
 						input.motionTextElement.ProcessFrame(1, time-clip.start);
 						
-						if(input.DestroyTextOnEnd){input.motionTextElement.Remove();}
+						// if(input.DestroyTextOnEnd){input.motionTextElement.Remove();}
 					}
 				}
 
@@ -53,25 +70,29 @@ namespace TextAnimationTimeline
 					if (!input.motionTextElement)
 					{
 						var motion = trackBinding.CreateMotionTextElement(clip.displayName, input.animationType);
-						motion.TextAnimationManager = trackBinding;
+						motion.clip = clip;
+						motion.textAnimationControlBehaviour = input;
+						motion.transform.localScale = input.offsetLocalScale;
+						motion.transform.localEulerAngles = input.offsetEulerAngles;
+						motion.transform.localPosition = input.offsetLocalPosition;
+						motion.textAnimationManager = trackBinding;
 						motion.DebugMode = trackBinding.DebugMode;
 						motion.Font = input.overrideFont ? input.overrideFont : trackBinding.BaseFont;
 						motion.FontSize = input.fontSize >= 0 ? input.fontSize : trackBinding.BaseFontSize;
 						motion.Parent = trackBinding.ParentGameObject != null ? trackBinding.ParentGameObject.transform : trackBinding.transform;
 						if (input.overrideParent != null) motion.Parent = input.overrideParent.transform;
-						motion.transform.SetParent(motion.Parent);
-						motion.OffsetLocalScale = input.offsetLocalScale;
-						motion.OffsetEulerAngles = input.offsetEulerAngles;
-						motion.OffsetLocalPosition = input.offsetLocalPosition;
+						motion.transform.SetParent(motion.Parent,false);
+						
 						if (input.layer >= 0) motion.layer = input.layer;
 						motion.ID = input.id;
 						motion.TextSegmentationOptions = input.textSegmentationOptions;
 						if (input.referenceTransform != null)
-							motion.ReferenceTransform = input.referenceTransform.transform;
+							motion.referenceTransform = input.referenceTransform.transform;
 						
 						input.motionTextElement = motion;
 						input.isCreate = true;
 						motion.Init(clip.displayName, clip.duration);
+						motionTextElements.Add(motion);
 						break;
 					}
 					else
@@ -89,11 +110,11 @@ namespace TextAnimationTimeline
 
 
 
-				if (input.motionTextElement && time < clip.start)
-				{
-					input.motionTextElement.Remove();
-					input.motionTextElement = null;
-				}
+				// if (input.motionTextElement && time < clip.start)
+				// {
+				// 	input.motionTextElement.Remove();
+				// 	input.motionTextElement = null;
+				// }
 			}
 		}
 	}

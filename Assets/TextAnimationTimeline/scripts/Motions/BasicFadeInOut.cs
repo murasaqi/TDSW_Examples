@@ -17,7 +17,7 @@ namespace TextAnimationTimeline.Motions
         
         public override void ProcessFrame(double normalizedTime, double seconds)
         {
-            TextMeshElement.alpha = AnimationCurveAsset.BasicInOut.Evaluate((float) normalizedTime);
+            TextMeshElement.alpha = animationCurveAsset.BasicInOut.Evaluate((float) normalizedTime);
         }
 
     }

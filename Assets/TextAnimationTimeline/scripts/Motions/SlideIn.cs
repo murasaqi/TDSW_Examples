@@ -54,14 +54,14 @@ namespace TextAnimationTimeline.Motions
                 t.transform.localPosition -= new Vector3(position.x/2f, 0f,0f);
                 t.alpha = 0f;
                 moves.Add(t.gameObject.AddComponent<BasicBounceUpMove>());
-                moves.Last().Init(AnimationCurveAsset.SteepIn,delay);
+                moves.Last().Init(animationCurveAsset.SteepIn,delay);
                 moves.Last().end = new Vector3(t.transform.localPosition.x,0f,t.transform.localPosition.z);
                 var startPos = t.transform.localPosition;
                 startPos += new Vector3(-300f, 0f, 0f);
                 moves.Last().start = startPos;
                 
                 fadeins.Add(t.gameObject.AddComponent<FadeInOut>());
-                fadeins.Last().Init(AnimationCurveAsset.SteepInOut,delay );
+                fadeins.Last().Init(animationCurveAsset.SteepInOut,delay );
 
                 count++;
             }
@@ -134,14 +134,14 @@ namespace TextAnimationTimeline.Motions
                 t.transform.localPosition -= new Vector3(position.x/2f, 0f,0f);
                 t.alpha = 0f;
                 moves.Add(t.gameObject.AddComponent<BasicBounceUpMove>());
-                moves.Last().Init(AnimationCurveAsset.SteepIn,delay);
+                moves.Last().Init(animationCurveAsset.SteepIn,delay);
                 moves.Last().end = new Vector3(t.transform.localPosition.x,0f,t.transform.localPosition.z);
                 var startPos = t.transform.localPosition;
                 startPos += new Vector3(300f, 0f, 0f);
                 moves.Last().start = startPos;
                 
                 fadeins.Add(t.gameObject.AddComponent<FadeInOut>());
-                fadeins.Last().Init(AnimationCurveAsset.SteepInOut,delay );
+                fadeins.Last().Init(animationCurveAsset.SteepInOut,delay );
 
                 count++;
             }

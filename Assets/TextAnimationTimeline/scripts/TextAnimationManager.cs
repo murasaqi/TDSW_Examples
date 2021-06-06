@@ -50,8 +50,8 @@ namespace TextAnimationTimeline
             go.gameObject.name = "text: " + word;
             var parent = ParentGameObject != null ? ParentGameObject.transform : transform;
             go.transform.SetParent(parent);
-            go.transform.localPosition = Vector3.zero;
-            go.transform.localEulerAngles = Vector3.zero;
+            // go.transform.localPosition = Vector3.zero;
+            // go.transform.localEulerAngles = Vector3.zero;
    
             var motion = SelectMotionType(animationType, go);
             return motion;   
@@ -74,40 +74,40 @@ namespace TextAnimationTimeline
                     motion = go.AddComponent<BasicGameTextBoxAnimation>();
                     break;
                 
-                case AnimationType.Slash:
-                    motion = go.AddComponent<BackgroundSlashs>();
-                    break;
-            
-                case AnimationType.CutSlash:
-                    motion = go.AddComponent<CutSlash>();
-                    break;
-
-                case AnimationType.LaidWords:
-                    motion = go.AddComponent<LaidWords>();
-                    break;
-                
-                case AnimationType.LaidWords_FromTheLeft:
-                    motion = go.AddComponent<LaidWords_FromTheLeft>();
-                    break;
-                
-                case AnimationType.LineCircle:
-                    motion = go.AddComponent<LineCircleMotion>();
-                    break;
+                // case AnimationType.Slash:
+                //     motion = go.AddComponent<BackgroundSlashs>();
+                //     break;
+                //
+                // case AnimationType.CutSlash:
+                //     motion = go.AddComponent<CutSlash>();
+                //     break;
+                //
+                // case AnimationType.LaidWords:
+                //     motion = go.AddComponent<LaidWords>();
+                //     break;
+                //
+                // case AnimationType.LaidWords_FromTheLeft:
+                //     motion = go.AddComponent<LaidWords_FromTheLeft>();
+                //     break;
+                //
+                // case AnimationType.LineCircle:
+                //     motion = go.AddComponent<LineCircleMotion>();
+                //     break;
                 
                 case AnimationType.VerticalFlow:
                     motion = go.AddComponent<VerticalFlow>();
                     break;
                 
-                case AnimationType.LineRect:
-                    motion = go.AddComponent<LineRectMotion>();
-                    break;
-                
-                case AnimationType.RectReactionText:
-                    motion = go.AddComponent<RectReactionText>();
-                    break;
-                
-                case AnimationType.SineWave:
-                    motion = go.AddComponent<SineWave>();
+                // case AnimationType.LineRect:
+                //     motion = go.AddComponent<LineRectMotion>();
+                //     break;
+                //
+                // case AnimationType.RectReactionText:
+                //     motion = go.AddComponent<RectReactionText>();
+                //     break;
+                //
+                case AnimationType.BasicFadeInOutVertical:
+                    motion = go.AddComponent<BasicFadeInOutVertical>();
                     break;
                 
                 case AnimationType.HorizontalFlow:
@@ -122,9 +122,9 @@ namespace TextAnimationTimeline
                     motion = go.AddComponent<FlowUp>();
                     break;
                 
-                case AnimationType.VerticalLines:
-                    motion = go.AddComponent<VerticalLines>();
-                    break;
+                // case AnimationType.VerticalLines:
+                //     motion = go.AddComponent<VerticalLines>();
+                //     break;
                 
                 case AnimationType.PopUpWords:
                     motion = go.AddComponent<PopUpWords>();
@@ -145,7 +145,7 @@ namespace TextAnimationTimeline
             }
 
             
-            motion.AnimationCurveAsset = AnimationCurves;
+            motion.animationCurveAsset = AnimationCurves;
             motion.Graphics = graphics;
 //            motion.TmProCapture = tmProCapture;
             

@@ -5,6 +5,8 @@ using TextAnimationTimeline.Motions;
 //using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Timeline;
+
 namespace TextAnimationTimeline
 {
     
@@ -27,15 +29,28 @@ namespace TextAnimationTimeline
         private Transform _parent;
         private bool _debugMode;
         private TextAnimationManager _textAnimationManager;
-
+        private TimelineClip _clip;
+        private TextAnimationControlBehaviour _textAnimationControlBehaviour;
         private Transform _referenceTransform;
         private int _layer;
         private TextAnimationGraphics _graphics;
 //        private TMProCapture _tmProCapture;
         public int ID;
-        
 
-//        private FontAsset fontsAsset;
+
+        public TimelineClip clip
+        {
+            get => _clip;
+            set => _clip = value;
+        }
+
+        public TextAnimationControlBehaviour textAnimationControlBehaviour
+        {
+            get => _textAnimationControlBehaviour;
+            set => _textAnimationControlBehaviour = value;
+        }
+
+        //        private FontAsset fontsAsset;
         public float FontSize;
 
         public TMP_FontAsset Font
@@ -62,20 +77,20 @@ namespace TextAnimationTimeline
             set => _layer = value;
         }
 
-        public TextAnimationManager TextAnimationManager
+        public TextAnimationManager textAnimationManager
         {
             get { return _textAnimationManager; }
             set { _textAnimationManager = value; }
         }
         
 
-        public AnimationCurveAsset AnimationCurveAsset
+        public AnimationCurveAsset animationCurveAsset
         {
             set => _animationCurvesAsset = value;
             get => _animationCurvesAsset;
         }
 
-        public Transform ReferenceTransform
+        public Transform referenceTransform
         {
             get => _referenceTransform;
             set => _referenceTransform = value;

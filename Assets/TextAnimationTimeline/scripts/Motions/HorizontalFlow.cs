@@ -39,7 +39,7 @@ namespace TextAnimationTimeline.Motions
                 var delay = Random.Range(0f, 0.3f);
                 ch.transform.localPosition -= new Vector3(totalHeight/2f, 0f, 0f);
                 var flowMo = ch.gameObject.AddComponent<TMProFlowMove>();
-                flowMo.Init((1f-delay)*Random.Range(1f,0.8f), delay,AnimationCurveAsset.SlowMo2,AnimationCurveAsset.BasicInOut2);
+                flowMo.Init((1f-delay)*Random.Range(1f,0.8f), delay,animationCurveAsset.SlowMo2,animationCurveAsset.BasicInOut2);
                 flowMo.startPos = ch.transform.localPosition;
                 flowMo.startAngle = Vector3.zero;
                 flowMo.endAngle = new Vector3(Random.Range(-50,50),Random.Range(-70,70),Random.Range(-30,30));

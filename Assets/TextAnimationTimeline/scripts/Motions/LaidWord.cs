@@ -202,7 +202,7 @@ namespace TextAnimationTimeline.Motions
             foreach (var character in word)
             {
                 var tmpro = CreateTextMeshElement(character.ToString(), Font, FontSize);
-                var t = Graphics.TMProToTex2D(tmpro.Children.First(), (int)FontSize, TextAnimationManager.CaptureCamera);
+                var t = Graphics.TMProToTex2D(tmpro.Children.First(), (int)FontSize, textAnimationManager.CaptureCamera);
 
                 var go = GameObject.CreatePrimitive(PrimitiveType.Quad);
                 go.transform.SetParent(transform);
@@ -240,21 +240,21 @@ namespace TextAnimationTimeline.Motions
                 totalWidth += text.transform.localScale.x;
             }
 
-            transform.position = ReferenceTransform.position;
-            var isVertical= ReferenceTransform.localScale.x < ReferenceTransform.localScale.y;
+            transform.position = referenceTransform.position;
+            var isVertical= referenceTransform.localScale.x < referenceTransform.localScale.y;
             var baseScale = 0f;
             
             if (!isVertical)
             {
-                baseScale = ReferenceTransform.localScale.x / totalWidth;
+                baseScale = referenceTransform.localScale.x / totalWidth;
             }
             else
             {
-                baseScale = ReferenceTransform.localScale.y / totalWidth;
+                baseScale = referenceTransform.localScale.y / totalWidth;
 
             }
             
-            var textPos = isVertical ? new Vector3(0f, ReferenceTransform.localScale.y/2f, 0f) : new Vector3(-ReferenceTransform.localScale.x/2f, 0f, 0f) ;
+            var textPos = isVertical ? new Vector3(0f, referenceTransform.localScale.y/2f, 0f) : new Vector3(-referenceTransform.localScale.x/2f, 0f, 0f) ;
             foreach (var text in textTextures)
             {
                 text.transform.localScale *= baseScale;
@@ -293,7 +293,7 @@ namespace TextAnimationTimeline.Motions
                     d = Random.Range(0, 2) == 1 ? MoveDirection.Up : MoveDirection.Down;
                 }
                 
-                m.Init(d,AnimationCurveAsset.BasicIn,AnimationCurveAsset.CutSlashOut);
+                m.Init(d,animationCurveAsset.BasicIn,animationCurveAsset.CutSlashOut);
                 m.delay = delay;
                 m.fadeInOutDuration = 0.3f;
                 m.stayDuration = (mainDuration - m.fadeInOutDuration * 2) * Random.Range(1f, 0.6f);
@@ -301,7 +301,7 @@ namespace TextAnimationTimeline.Motions
                 a.delay = delay;
                 a.fadeInOutDuration = m.fadeInOutDuration;
                 a.stayDuration = m.stayDuration;
-                a.Init(AnimationCurveAsset.SlideWordsIn,AnimationCurveAsset.SlideWordsOut);
+                a.Init(animationCurveAsset.SlideWordsIn,animationCurveAsset.SlideWordsOut);
                
                     
                 textFadeIns.Add(a);
@@ -310,7 +310,7 @@ namespace TextAnimationTimeline.Motions
                 delay += delaystep;
             }
 
-            transform.localPosition = ReferenceTransform.localPosition;
+            transform.localPosition = referenceTransform.localPosition;
 
 
             var noiseScale = 0.5f;
@@ -331,7 +331,7 @@ namespace TextAnimationTimeline.Motions
             {
                 foreach (var m in materials)
                 {
-                    m.SetFloat("_BGSlider", AnimationCurveAsset.BasicIn.Evaluate(bgDuration));
+                    m.SetFloat("_BGSlider", animationCurveAsset.BasicIn.Evaluate(bgDuration));
                 }    
             }
             
@@ -379,7 +379,7 @@ namespace TextAnimationTimeline.Motions
         public override void Init(string word, double duration)
         {
             var splitWords = word.Split('/').ToList();
-            foreach (Transform child in ReferenceTransform)
+            foreach (Transform child in referenceTransform)
             {
 
                 var isCreate = false;
@@ -412,16 +412,16 @@ namespace TextAnimationTimeline.Motions
    
                     MotionTextElement motion;
                     motion = go.AddComponent<BasicSlideWord>();
-                    motion.AnimationCurveAsset = AnimationCurveAsset;
+                    motion.animationCurveAsset = animationCurveAsset;
                     motion.Graphics = Graphics;
                     
-                    motion.TextAnimationManager = TextAnimationManager;
+                    motion.textAnimationManager = textAnimationManager;
                     motion.DebugMode = DebugMode;
                     motion.Font = Font;
                     motion.FontSize = FontSize;
                     motion.transform.SetParent(transform);
                     motion.TextSegmentationOptions = TextSegmentationOptions;
-                    motion.ReferenceTransform = child;
+                    motion.referenceTransform = child;
                     motion.GetComponent<BasicSlideWord>().delay = randomDelay;
                     motion.Init(pickWord, Duration);
                     
@@ -453,7 +453,7 @@ namespace TextAnimationTimeline.Motions
             var maxDistance =Vector3.Distance( new Vector3(Screen.width/2f, 0f, 0f), new Vector3(-Screen.width/2f,0f,0f)) ;
             var splitWords = word.Split('/').ToList();
             var totalDelay = 0.4f;
-            foreach (Transform child in ReferenceTransform)
+            foreach (Transform child in referenceTransform)
             {
 
                 var isCreate = false;
@@ -492,16 +492,16 @@ namespace TextAnimationTimeline.Motions
    
                     MotionTextElement motion;
                     motion = go.AddComponent<BasicSlideWord>();
-                    motion.AnimationCurveAsset = AnimationCurveAsset;
+                    motion.animationCurveAsset = animationCurveAsset;
                     motion.Graphics = Graphics;
                     
-                    motion.TextAnimationManager = TextAnimationManager;
+                    motion.textAnimationManager = textAnimationManager;
                     motion.DebugMode = DebugMode;
                     motion.Font = Font;
                     motion.FontSize = FontSize;
                     motion.transform.SetParent(transform);
                     motion.TextSegmentationOptions = TextSegmentationOptions;
-                    motion.ReferenceTransform = child;
+                    motion.referenceTransform = child;
                     motion.Init(pickWord, Duration);
 //                    motion.GetComponent<BasicSlideWord>().delay = Mathf.Lerp(0f,0, th);
 //                    motion.GetComponent<BasicSlideWord>().mainDuration = Mathf.Clamp(1f - totalDelay, 0f, 0.2f);

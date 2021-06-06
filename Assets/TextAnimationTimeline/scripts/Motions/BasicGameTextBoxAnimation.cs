@@ -28,7 +28,7 @@ namespace TextAnimationTimeline.Motions
                 if (currentTime > delay)
                 {
                     var time = Mathf.Clamp((float)(currentTime - delay)/childDuration, 0f,1f);
-                    character.alpha = AnimationCurveAsset.BasicIn.Evaluate(time);
+                    character.alpha = animationCurveAsset.BasicIn.Evaluate(time);
                 }
                 if (currentTime > delay + childDuration)
                 {
@@ -38,7 +38,7 @@ namespace TextAnimationTimeline.Motions
                 if (normalizedTime > fadeoutDelay)
                 {
                     var t = Mathf.Clamp( (float)(normalizedTime - fadeoutDelay) / fadeOutDuration, 0f, 1f);
-                    TextMeshElement.alpha = AnimationCurveAsset.BasicOut.Evaluate(t);
+                    TextMeshElement.alpha = animationCurveAsset.BasicOut.Evaluate(t);
                 }
                 delay += childDuration;
                 count++;

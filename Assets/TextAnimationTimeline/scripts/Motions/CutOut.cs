@@ -183,7 +183,7 @@ namespace TextAnimationTimeline.Motions
             var totalWidth = 0f;
             foreach (var c in TextMeshElement.Children)
             {
-                var t = Graphics.WordToTextureGameObject(c, 2000, TextAnimationManager.CaptureCamera);
+                var t = Graphics.WordToTextureGameObject(c, 2000, textAnimationManager.CaptureCamera);
                 if(layer >= 0)t.layer = layer;
                 textureObjs.Add(t);
 
@@ -213,7 +213,7 @@ namespace TextAnimationTimeline.Motions
                 var mo = t.AddComponent<CutOutMotion>();
                 if(layer >= 0) mo.gameObject.layer = layer;
                 mo.transform.SetParent(transform);
-                mo.Init(AnimationCurveAsset, TextAnimationManager.mainCamera);
+                mo.Init(animationCurveAsset, textAnimationManager.mainCamera);
                 mo.duration = lineDuration;
                 mo.delay = delaystep * count;
                 motions.Add(mo);
@@ -226,8 +226,8 @@ namespace TextAnimationTimeline.Motions
                 textMo.startAngle = t.transform.localEulerAngles;
                 textMo.endAngle = textMo.startAngle +
                                   new Vector3(Random.Range(-20, 20), Random.Range(-30, 30), 0);
-                textMo.curve = AnimationCurveAsset.SteepIn;
-                textMo.alphaCurve = AnimationCurveAsset.BasicInOut;
+                textMo.curve = animationCurveAsset.SteepIn;
+                textMo.alphaCurve = animationCurveAsset.BasicInOut;
                 
                 textMo.Init();
                 textMo.delay = delaystep * count + lineDuration * 0.3f;

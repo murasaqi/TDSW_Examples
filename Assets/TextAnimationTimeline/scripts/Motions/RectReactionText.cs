@@ -75,8 +75,8 @@ namespace TextAnimationTimeline.Motions
                 ch.transform.localPosition += new Vector3(0f, totalHeight/2f, 0f);
                 ch.gameObject.layer = 14;
                 var mo = ch.gameObject.AddComponent<ScaleInOut>();
-                mo.Init(1f-totalDelay, delay, AnimationCurveAsset.SteepIn,
-                    AnimationCurveAsset.BasicInOut);
+                mo.Init(1f-totalDelay, delay, animationCurveAsset.SteepIn,
+                    animationCurveAsset.BasicInOut);
                 mo.endScale = new Vector3(transform.localScale.x,transform.localScale.x, transform.localScale.x);
                 scaleInouts.Add(mo);
 
@@ -123,8 +123,8 @@ namespace TextAnimationTimeline.Motions
                    
                 }
                 
-                rect.alpha = AnimationCurveAsset.BasicInOut.Evaluate(t);
-                rect.radius = AnimationCurveAsset.SlowMo.Evaluate(t) * radius;
+                rect.alpha = animationCurveAsset.BasicInOut.Evaluate(t);
+                rect.radius = animationCurveAsset.SlowMo.Evaluate(t) * radius;
                 rect.UpdateVertices();
 
                 count++;

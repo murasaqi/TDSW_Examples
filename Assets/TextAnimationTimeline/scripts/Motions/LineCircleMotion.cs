@@ -23,8 +23,8 @@ namespace TextAnimationTimeline.Motions
         
         public override void ProcessFrame(double normalizedTime, double seconds)
         {
-            lineCircle.alpha = AnimationCurveAsset.BasicInOut.Evaluate((float) normalizedTime);
-            lineCircle.Radius = AnimationCurveAsset.SteepIn.Evaluate((float) normalizedTime) * radius;
+            lineCircle.alpha = animationCurveAsset.BasicInOut.Evaluate((float) normalizedTime);
+            lineCircle.Radius = animationCurveAsset.SteepIn.Evaluate((float) normalizedTime) * radius;
             lineCircle.UpdateCircle();
         }
 

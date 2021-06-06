@@ -117,7 +117,7 @@ namespace TextAnimationTimeline.Motions
             foreach(var t in TextMeshElement.Children)
             {
                 //一文字のテクスチャが貼られたオブジェクトが生成され参照をListに持つ
-                var obj = Graphics.WordToTextureGameObject(t, 1500, TextAnimationManager.CaptureCamera);
+                var obj = Graphics.WordToTextureGameObject(t, 1500, textAnimationManager.CaptureCamera);
                 obj.name = "QuadText:" + t.text;
                 textureObjs.Add(obj);
             }
@@ -160,7 +160,7 @@ namespace TextAnimationTimeline.Motions
 
         public void Init()
         {
-            var resolution = TextAnimationManager.Resolution;
+            var resolution = textAnimationManager.Resolution;
             var textLineDirection = new Vector3(resolution.x / 2, -resolution.y / 2,0f);
             textLineDirection = Vector3.Normalize(textLineDirection);
 
@@ -217,11 +217,11 @@ namespace TextAnimationTimeline.Motions
                 //var a = character.gameObject.AddComponent<CharacterAlphaInOut>();
                 var a = quadObj.AddComponent<CharacterAlphaInOut>();
                 //a.Init(character,AnimationCurveAsset.Kaf_CharacterPoursAlphaInOut,delay);
-                a.Init(textureObjs[i],AnimationCurveAsset.Kaf_CharacterPoursAlphaInOut,delay);
+                a.Init(textureObjs[i],animationCurveAsset.Kaf_CharacterPoursAlphaInOut,delay);
                 alphaInOuts.Add(a);
 
                 var interpolation = quadObj.AddComponent<CharacterTextureInterpolation>();
-                interpolation.Init(textureObjs[i], AnimationCurveAsset.Kaf_TextureInterpolation, delay);
+                interpolation.Init(textureObjs[i], animationCurveAsset.Kaf_TextureInterpolation, delay);
                 texInterpolation.Add(interpolation);
 
                 delay += delayStep;
@@ -233,7 +233,7 @@ namespace TextAnimationTimeline.Motions
         public override void ProcessFrame(double normalizedTime, double seconds)
         {
 
-            var t = AnimationCurveAsset.Kaf_CharacterPours.Evaluate((float) normalizedTime);
+            var t = animationCurveAsset.Kaf_CharacterPours.Evaluate((float) normalizedTime);
             foreach (var mo in motions)
             {
                 mo.OnProcess(t);

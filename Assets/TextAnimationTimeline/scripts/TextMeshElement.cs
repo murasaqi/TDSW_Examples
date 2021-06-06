@@ -19,9 +19,11 @@ namespace TextAnimationTimeline
                 foreach (var w in words)
                 {
                     var text = TextGenerater.CreateTextMesh(w.ToString(), font, fontSize);
-                    text.transform.SetParent(transform);
+                    text.transform.SetParent(transform,false);
                     text.gameObject.layer = 14;
-                    text.transform.localPosition = Vector3.zero;
+                    // text.transform.localPosition = Vector3.zero;
+                    // text.transform.localEulerAngles = Vector3.zero;
+                    // text.transform.localScale = Vector3.one;
                     text.alignment = TextAlignmentOptions.CenterGeoAligned;
                     Children.Add(text);
                 }
@@ -30,7 +32,7 @@ namespace TextAnimationTimeline
             {
                 var text = TextGenerater.CreateTextMesh(words, font, fontSize);
                 text.alignment = TextAlignmentOptions.CenterGeoAligned;
-                text.transform.SetParent(transform);
+                text.transform.SetParent(transform,false);
                 Children.Add(text);
             }
             
